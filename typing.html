@@ -1,0 +1,95 @@
+<!--
+  Author: Your Name
+  Date Created: April 30, 2025
+  Date Tested: April 30, 2025
+  File: typing.html
+  Description: Starter Pokémon typing comparison with images and table.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing</title>
+  <meta name="description" content="Starter Pokémon typing and battle comparisons.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/StarterdexLogo.png" type="image/png">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+</head>
+<body>
+
+    <audio autoplay hidden>
+        <source src="audio/newpage.wav" type="audio/wav">
+    </audio>
+
+  <nav>
+    <div class="logo">
+        <img src="images/StarterdexLogo.png" alt="Starterdex Logo" width="80">
+    </div>
+
+    <a href="index.html">Home</a>
+    <a href="starterdex.html">Starterdex</a>
+    <a href="generations.html">Generations</a>
+    <a href="typing.html">Typing</a>
+    <a href="video.html">Video</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container centered-page">
+    <h1>Starter Pokémon Typing</h1>
+
+    <div class="two-col">
+      <div class="typing-entry">
+        <img src="images/GrassType.png" alt="Grass Starter">
+        <div class="typing-title">Grass</div>
+        <div class="typing-caption">There are currently 146 grass type Pokémon.</div>
+      </div>
+
+      <div class="typing-entry">
+        <img src="images/FireType.png" alt="Fire Starter">
+        <div class="typing-title">Fire</div>
+        <div class="typing-caption">There are currently 97 fire type Pokémon.</div>
+      </div>
+    </div>
+
+    <div class="typing-entry">
+      <img src="images/WaterType.png" alt="Water Starter">
+      <div class="typing-title">Water</div>
+      <div class="typing-caption">There are currently 176 water type Pokémon.</div>
+    </div>
+
+    <h2>Type Strengths and Weaknesses</h2>
+    <table border="1" cellpadding="8" cellspacing="0" class="centered-table">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Strong Against</th>
+          <th>Weak Against</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Grass</td>
+          <td>Water, Ground, Rock</td>
+          <td>Fire, Flying, Bug, Ice, Poison</td>
+        </tr>
+        <tr>
+          <td>Fire</td>
+          <td>Grass, Ice, Bug, Steel</td>
+          <td>Water, Ground, Rock</td>
+        </tr>
+        <tr>
+          <td>Water</td>
+          <td>Fire, Rock, Ground</td>
+          <td>Electric, Grass</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

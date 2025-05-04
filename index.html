@@ -1,0 +1,63 @@
+<!--
+  Author: Your Name
+  Date Created: April 26, 2025
+  Date Tested: May 2, 2025
+  File: index.html
+  Description: Main homepage introducing the Starterdex and describing the site’s pages.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starterdex Home</title>
+  <meta name="description" content="Homepage for the Starterdex project, introducing starter Pokémon and navigation.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/StarterdexLogo.png" type="image/png">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+</head>
+<body>
+
+  <audio autoplay hidden>
+    <source src="audio/newpage.wav" type="audio/wav">
+  </audio>
+
+  <nav>
+    <div class="logo">
+      <img src="images/StarterdexLogo.png" alt="Starterdex Logo" width="80">
+  </div>
+
+    <a href="index.html">Home</a>
+    <a href="starterdex.html">Starterdex</a>
+    <a href="generations.html">Generations</a>
+    <a href="typing.html">Typing</a>
+    <a href="video.html">Video</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container centered-page">
+    <h1>Welcome to the Starterdex</h1>
+    <p>This website is dedicated to the 27 starter Pokémon from across all generations. Whether you're a seasoned trainer or new to the world of Pokémon, this site is here to help you learn about the unique characteristics and types of each starter Pokémon.</p>
+
+    <h2>Explore the Pages:</h2>
+    <ul>
+      <li><strong>Starterdex:</strong> A visual list of all 27 starter Pokémon with images and Pokédex entries.</li>
+      <li><strong>Generations:</strong> See which generation each starter is from and how many were introduced.</li>
+      <li><strong>Typing:</strong> Grow an understanding of the 3 types every starter Pokémon must be.</li>
+      <li><strong>Video:</strong> Watch our weekly recommended Pokémon YouTube video!</li>
+      <li><strong>Contact:</strong> A contact form to get in touch or leave feedback about the Starterdex project.</li>
+    </ul>
+  </div>
+
+  <figure class="cute">
+    <img src="images/whosthatp1.jpg" alt="WhosThat" class="cuter"/>
+    <img src="images/whothatp2.jpg" alt="WhosThatP" />
+  </figure> 
+  
+</body>
+</html>

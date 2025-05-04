@@ -1,0 +1,293 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+/* Default Container */
+.container {
+  padding: 2em;
+}
+
+/* Centered Layout Container */
+.centered-page {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.centered-page h1 {
+  text-align: center;
+}
+
+/* Starterdex Layout */
+.starter-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.starter-entry img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 0 auto 1em auto;
+  transition: transform 0.3s ease;
+}
+
+.starter-entry img:hover {
+  transform: scale(1.05);
+}
+
+.description {
+  font-size: 1.1em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+/* Generations Page Layout */
+.gen-section {
+  margin-bottom: 10em;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gen-section img {
+  width: 500px;
+  height: 280px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  transition: transform 0.3s ease;
+}
+
+.gen-section img:hover {
+  transform: scale(1.05);
+}
+
+.gen-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+
+.gen-caption {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Typing Layout */
+.typing-entry {
+  text-align: center;
+  margin-bottom: 6em;
+}
+
+.typing-entry img {
+  width: 150px;
+  height: 150px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  transition: transform 0.3s ease;
+}
+
+.typing-entry img:hover {
+  transform: scale(1.05);
+}
+
+.typing-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.typing-caption {
+  font-size: 1em;
+  color: #555;
+}
+
+.centered-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Two-Column Layout */
+.two-col {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.two-col > div {
+  flex: 1 1 45%;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  padding: 0.5em;
+  margin-top: 0.3em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5em;
+}
+
+button {
+  padding: 0.7em 1.2em;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .starter-entry {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .starter-entry img {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+  .two-col {
+    flex-direction: column;
+  }
+
+  .two-col > div {
+    width: 100%;
+  }
+}
+
+/* Print Styling */
+@media print {
+  body {
+    font-size: 12pt;
+    color: black;
+    background: white;
+  }
+
+  nav {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5em;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 1em;
+  }
+}
+
+/* 2-Column Layout for Generations Page */
+.gen-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.gen-grid .gen-section {
+  width: 45%;
+  margin-bottom: 3em;
+}
+
+/* Image Handling for Generations Page */
+.gen-grid .gen-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1em auto;
+}
+
+.cute {
+  width: 99%;
+  min-width: 200px;
+  max-width: 370px;
+  position: relative;	
+  margin: 0 auto;  
+  height: 264px;
+}
+
+.cute img {
+  width: 100%;
+  min-width: 200px;
+  max-width: 350px;
+  position: absolute;	
+  overflow: hidden;
+  border: 3px solid #363A3D;
+  border-radius: 0; 
+  margin: 0;
+  opacity: 1;
+  height: 435px;
+  max-height: 264px;
+}
+
+.cute .cuter {
+  z-index: 9999;
+  transition: opacity 1s linear;
+  cursor: pointer;
+}
+
+.cute:hover > .cuter {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .gen-grid .gen-section {
+    width: 100%;
+  }
+}

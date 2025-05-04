@@ -1,0 +1,67 @@
+<!--
+  Author: Your Name
+  Date Created: April 30, 2025
+  Date Tested: April 30, 2025
+  File: contact.html
+  Description: Contact form to send feedback or report updates to the Starterdex team.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <meta name="description" content="Contact form to send updates or feedback to the developers.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/StarterdexLogo.png" type="image/png">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+</head>
+<body>
+
+    <audio autoplay hidden>
+        <source src="audio/newpage.wav" type="audio/wav">
+    </audio>
+
+  <nav>
+    <div class="logo">
+        <img src="images/StarterdexLogo.png" alt="Starterdex Logo" width="80">
+    </div>
+
+    <a href="index.html">Home</a>
+    <a href="starterdex.html">Starterdex</a>
+    <a href="generations.html">Generations</a>
+    <a href="typing.html">Typing</a>
+    <a href="video.html">Video</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container centered-page">
+    <h1>Contact the Developer</h1>
+    <p>If you've found bugs, have suggestions, send me a message below!</p>
+
+    <form action="response.html" method="get">
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" required>
+
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <div class="button-group">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

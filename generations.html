@@ -1,0 +1,104 @@
+<!--
+  Author: Your Name
+  Date Created: April 30, 2025
+  Date Tested: April 30, 2025
+  File: generations.html
+  Description: Displays 9 generations of starter Pokémon, each with one image and caption.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generations</title>
+  <meta name="description" content="Starter Pokémon grouped by generation with images and captions.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/StarterdexLogo.png" type="image/png">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+  <script src="js/jquery.slicknav.min.js"></script> 
+  <script type="text/javascript"> 
+      $(document).ready(function(){
+          $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+      }); 
+  </script>
+</head>
+<body>
+
+  <audio autoplay hidden>
+    <source src="audio/newpage.wav" type="audio/wav">
+  </audio>
+
+  <nav>
+    <div class="logo">
+      <img src="images/StarterdexLogo.png" alt="Starterdex Logo" width="80">
+    </div>
+
+    <a href="index.html">Home</a>
+    <a href="starterdex.html">Starterdex</a>
+    <a href="generations.html">Generations</a>
+    <a href="typing.html">Typing</a>
+    <a href="video.html">Video</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container centered-page">
+    <h1>Pokémon Generations</h1>
+
+    <div class="gen-grid">
+      <div class="gen-section">
+        <div class="gen-title">Generation 1</div>
+        <img src="images/Generation1.jpg" alt="Generation 1">
+        <div class="gen-caption">In Generation 1, there were originally 151 Pokémon.</div>
+      </div>
+
+      <div class="gen-section">
+        <div class="gen-title">Generation 2</div>
+        <img src="images/Generation2.jpg" alt="Generation 2">
+        <div class="gen-caption">In Generation 2, there were 100 Pokémon added.</div>
+      </div>
+
+      <div class="gen-section">
+        <div class="gen-title">Generation 3</div>
+        <img src="images/Generation3.jpg" alt="Generation 3">
+        <div class="gen-caption">In Generation 3, there were 135 Pokémon added.</div>
+      </div>
+
+      <div class="gen-section">
+        <div class="gen-title">Generation 4</div>
+        <img src="images/Generation4.jpg" alt="Generation 4">
+        <div class="gen-caption">In Generation 4, there were 107 Pokémon added.</div>
+      </div>
+
+      <div class="gen-section">
+        <div class="gen-title">Generation 5</div>
+        <img src="images/Generation5.jpg" alt="Generation 5">
+        <div class="gen-caption">In Generation 5, there were 156 Pokémon added.</div>
+      </div>
+
+      <div class="gen-section">
+        <div class="gen-title">Generation 6</div>
+        <img src="images/Generation6.jpg" alt="Generation 6">
+        <div class="gen-caption">In Generation 6, there were 72 Pokémon added.</div>
+      </div>
+
+      <div class="gen-section">
+        <div class="gen-title">Generation 7</div>
+        <img src="images/Generation7.jpg" alt="Generation 7">
+        <div class="gen-caption">In Generation 7, there were 88 Pokémon added.</div>
+      </div>
+
+      <div class="gen-section">
+        <div class="gen-title">Generation 8</div>
+        <img src="images/Generation8.jpg" alt="Generation 8">
+        <div class="gen-caption">In Generation 8, there were 96 Pokémon added.</div>
+      </div>
+
+      <div class="gen-section">
+        <div class="gen-title">Generation 9</div>
+        <img src="images/Generation9.png" alt="Generation 9">
+        <div class="gen-caption">In Generation 9, there were 120 Pokémon added to give us a total of 1025 Pokémon.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
